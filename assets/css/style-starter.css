@@ -1,0 +1,285 @@
+@import url(../css/fonts.css);
+
+
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root{
+
+  /* Theme colors */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+  
+  --lemon-meringue: #eae2b7;
+  --maximum-yellow-red: #fcbf49;
+  --orange: #f77f00;
+  --maximum-red: #d62828;
+  --prussian-blue: #003049;
+
+  /* Gradient Color */
+  --warmth: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+
+  /* Theme font-family */
+  --Zcool_one: "Zcool_Xiaowei";
+  --Zcool_two: "Zcool_QingkeHuangYou";
+  --Zcool_three: "Zcool_KuaiLe";
+  --Rubik: "Rubik";
+  --MaShanZheng: "MaShanZheng";
+}
+
+/* -------------------------- Global Classes ------------------------ */
+
+a{
+  text-decoration: none;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  font-family: var(--Zcool_three) ;
+  font-size: 2.5rem;
+}
+
+h3{
+  font-family: var(--MaShanZheng);
+  font-size: 1.3rem;
+}
+
+button.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-family: var(--Zcool_three);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* -------------------------- Global Classes ------------------------ */
+
+
+/* ----------------------- navbar --------------------- */
+
+.nav{
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height:10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+  font-size: 1.4rem;
+  color: var(--lemon-meringue)
+}
+
+.collapse{
+  height: 30rem;
+}
+
+.nav .nav-items{
+  display: flex;
+  magin: 0;
+}
+
+.nav .nav-items .nav-link{
+  padding: 1.6rem 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  font-family: var(--Zcool_two);
+  color: var(--lemon-meringue);
+}
+
+.nav .nav-items .nav-link:hover{
+  background-color: var(--orange);
+}
+
+.nav .nav-items .nav-link:hover a{
+  color: var(--maximum-yellow-red);
+}
+
+.nav .nav-brand a{
+  font-size: 2.0rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: var(--Zcool_three);
+  color: var(--lemon-meringue);
+}
+
+.nav .social{
+  padding: 1.4rem 0;
+}
+
+.nav .social i{
+  padding: 0.2rem;
+}
+
+.nav .social i:hover{
+  color: var(--bg-color);
+}
+
+/* -------------X--------- navbar ----------X---------- */
+
+/* ----------------------- Main Content ------------------------ */
+
+/* ----------------------- Site Title --------------------- */
+
+main .site-title{
+  background-image: url("../image/background_image.jpeg");
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background{
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white)
+}
+
+main .site-title h1, h3{
+  margin: 0.3rem;
+}
+
+main .site-title .btn{
+  margin: 1.8rem;
+  background: var(--warmth)
+}
+
+main .site-title .btn:hover{
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+/* -------------X--------- Site Title ----------X---------- */
+
+/* -----------X----------- Main Content ------------X----------- */
+
+/*                   Viewport less than or equal to 750px                     */
+
+@media only screen and (max-width: 750px){
+  .nav .nav-menu, .nav .nav-items{
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse{
+    display: initial;
+  }
+}
+
+/*     x             Viewport less than or equal to 750px           x         */
+
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* .nav-link{
+  display: block;
+  padding: 0.5rem 1rem;
+  .nav-link: hover, .nav-link: focus {
+    text-decoration: none; }
+  .nav-link.disabled{
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;}
+
+} */
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: coral;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.caution {
+    display: block;
+    font-size: 14px;
+    margin: 16px 0;
+    padding: 16px 24px
+}
+
+.caution,.caution :link,.caution :visited,.caution code {
+    background: #feefe3;
+    color: #bf360c
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

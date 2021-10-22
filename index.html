@@ -5,93 +5,77 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-.header {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 20px;
-}
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
 
-/* The navbar container */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 25px;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: coral;
-  color: black;
-}
-
-.column {
-  float: left;
-  width: 100%;
-  padding: 15px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-.caution {
-    display: block;
-    font-size: 14px;
-    margin: 16px 0;
-    padding: 16px 24px
-}
-
-.caution,.caution :link,.caution :visited,.caution code {
-    background: #feefe3;
-    color: #bf360c
-}
-
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-
-
-
-    </style>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
 
   </head>
+
   <body>
-    <div class="header">
-      <h2>唠嗑隆&瞌睡铭</h2>
-    </div>
+    <!-- <div class="header">
+      <h2>现在既是将来</h2>
+    </div> -->
 
-    <div class="topnav">
+    <!-------------------------------------------------------------- Navigation -------------------------------------------------------------------------->
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a href="#" class="text-gray">LONG</a>
+        </div>
+        <div class="toggle-collapse">
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div>
+          <ul class="nav-items">
+            <li class="nav-link">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="updates.html">Whats going on?</a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="sharing.html">Sharing</a>
+            </li>
+            <li class="nav-link">
+              <a href="witness.html">Witness</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social text-gray">
+          <a href="https://www.linkedin.com/in/shilong-li-138006170/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/slljack"><i class="fab fa-github-alt"></i></a>
+          <a href="https://www.instagram.com/longlong.ing/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCe93Hpp8miMle5JHx-Yx4og"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------------------------------- Navigation -------------------------------------------------------------------------->
 
-      <a href="index.html">Home</a>
-      <a href="updates.html">Whats going on?</a>
-      <a href="about.html">About</a>
-      <a href="sharing.html">Sharing</a>
-      <a href="WordsToYou.html">Words to You</a>
+    <!--------------------------------------------------------- Main Site Section ----------------------------------------------------------------------->
 
-    </div>
+    <main>
+
+      <!-------------------------- Site Title -------------------------------->
+
+      <section class="site-title">
+        <div class="site-background">
+          <h3>现在既是将来</h3>
+          <h1></h1>
+          <button class="btn">Explore</button>
+        </div>
+      </section>
+
+      <!--------------X----------- Site Title ----------------X--------------->
+    </main>
+
+    <!-----------------------------X--------------------------- Main Site Section -------------------------------------X--------------------------------->
 
     <div class="row">
       <div class="column">
@@ -105,6 +89,10 @@
       <p>Seeking</p>
     </div>
 
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.6.0.min.js"></script>
 
+    <!-- Custom JavaScript file -->
+    <script src="js/main.js"></script>
   </body>
 </html>

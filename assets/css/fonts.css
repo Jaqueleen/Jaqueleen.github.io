@@ -1,0 +1,24 @@
+@font-face{
+    font-family: Zcool_Xiaowei;
+    src: url("../font/ZCOOL_XiaoWei/ZCOOLXiaoWei-Regular.ttf");
+}
+
+@font-face{
+    font-family: Zcool_QingkeHuangYou;
+    src: url("../font/ZCOOL_QingKe_HuangYou/ZCOOLQingKeHuangYou-Regular.ttf");
+}
+
+@font-face{
+    font-family: Zcool_KuaiLe;
+    src: url("../font/ZCOOL_KuaiLe/ZCOOLKuaiLe-Regular.ttf");
+}
+
+@font-face{
+    font-family: Rubik;
+    src: url("../font/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: MaShanZheng;
+    src: url("../font/Ma_Shan_Zheng/MaShanZheng-Regular.ttf");
+}
