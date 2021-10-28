@@ -112,12 +112,12 @@ button.btn{
 }
 
 .collapse{
-  height: 30rem;
+  height: 40rem;
 }
 
 .nav .nav-items{
   display: flex;
-  magin: 0;
+  margin: 0;
 }
 
 .nav .nav-items .nav-link{
