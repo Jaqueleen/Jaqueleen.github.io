@@ -132,6 +132,13 @@ button.btn{
 
 /* -------------------------- Global Classes ------------------------ */
 
+.english_title{
+  color: var(--white)
+}
+
+.english_link{
+  color: var(--white)
+}
 
 /* ----------------------- navbar --------------------- */
 
