@@ -93,7 +93,6 @@ section img{
 
 a{
   text-decoration: none;
-  color: var(--white);
 }
 
 .flex-row{
@@ -131,14 +130,6 @@ button.btn{
 }
 
 /* -------------------------- Global Classes ------------------------ */
-
-.english_title{
-  color: var(--white)
-}
-
-.english_link{
-  color: var(--white)
-}
 
 /* ----------------------- navbar --------------------- */
 
@@ -180,7 +171,7 @@ button.btn{
 
 .nav .nav-items{
   display: flex;
-  magin: 0;
+  margin: 0;
 }
 
 .nav .nav-items .nav-link{
@@ -225,6 +216,10 @@ button.btn{
 
 .english_title{
   color:var(--white)
+}
+
+.english_link{
+  color: var(--white)
 }
 
 /* ----------------------- Site Title --------------------- */
